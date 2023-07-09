@@ -38,4 +38,17 @@ $ sudo apt -y install curl
 $ sudo apt -y install gimp-plugin-registry gmic gimp-gmic inkscape dia
 ```
 
+## リモートデスクトップ設定
+
+```
+$ sudo apt -y install xrdp tigervnc-standalone-server
+$ sudo vi /etc/ssh/sshd_config
+
+末尾に以下を追加すると、リモートデスクトップでシャットダウンできる
+X11Forwarding yes
+
+$ sudo reboot
+```
+
+
 
